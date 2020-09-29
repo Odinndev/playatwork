@@ -4,7 +4,11 @@
       <v-row justify="space-around">
         <v-card width="400">
           <v-card-text>
-            <div class="font-weight-bold ml-8 mb-2">Today</div>
+            <div class="font-weight-bold ml-8 mb-2">
+              <span>Þriðjudagur 29/09 <v-icon>mdi-clock</v-icon> 07:14</span>
+              <!--{{ now | moment("timezone", "Atlantic/Reykjavik", "DD/MM/YYYY") }}
+              {{ now | moment("H:mm") }}-->
+            </div>
 
             <v-timeline align-top dense>
               <v-timeline-item
@@ -15,7 +19,8 @@
               >
                 <div>
                   <div class="font-weight-normal">
-                    <strong>{{ message.from }}</strong> @{{ message.time }}
+                    <strong>{{ message.from }}</strong>
+                    <small><v-icon>mdi-clock</v-icon>{{ message.time }}</small>
                   </div>
                   <div>{{ message.message }}</div>
                 </div>
@@ -36,25 +41,31 @@ export default {
       homebase: [],
       messages: [
         {
-          from: "You",
-          message: "Sure, I'll see you later.",
+          from: "Óðinn",
+          message:
+            "Þreif gufuna niðri. þarf að setja dýnurnar aftur á seinni vaktinni!",
           time: "10:42am",
-          color: "deep-purple lighten-1",
+          color: "yellow lighten-2",
         },
         {
-          from: "John Doe",
-          message: "Yeah, sure. Does 1:00pm work?",
+          from: "Halla",
+          message: "Þarf ekki að skoða þetta eithvað?",
           time: "10:37am",
-          color: "green",
+          color: "red",
         },
         {
-          from: "You",
-          message: "Did you still want to grab lunch today?",
+          from: "Steina",
+          message: "Ég vil minna á að þrífa Skápana!",
           time: "9:47am",
-          color: "deep-purple lighten-1",
+          color: "yellow darken-2",
         },
       ],
     };
+  },
+  computed: {
+    now: function () {
+      return Date.now();
+    },
   },
   methods: {},
 };

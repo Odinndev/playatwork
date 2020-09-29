@@ -9,9 +9,11 @@
   "dependencies": {
     "firebase": "^5.0.3",
     "iview": "^2.14.0-rc.3",
+    "moment-timezone": "0.5.31",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.16",
     "vue-froala-wysiwyg": "^2.8.1",
+    "vue-momentjs": "1.0.0",
     "vue-router": "^3.0.1",
     "vuefire": "^1.4.5",
     "vuetify": "^1.0.18",

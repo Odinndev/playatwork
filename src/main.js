@@ -3,19 +3,18 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import "./registerServiceWorker";
-import iView from "iview";
-import "iview/dist/styles/iview.css";
 import Vuetify from "vuetify";
 import "vuetify/dist/vuetify.min.css"; // Ensure you are using css-loader
-import VueFire from "vuefire";
-import VueFroala from "vue-froala-wysiwyg";
+import VueMoment from "vue-momentjs";
+import moment from "moment-timezone";
+import "moment/locale/is";
 
 Vue.config.productionTip = false;
 
-Vue.use(iView);
 Vue.use(Vuetify);
-Vue.use(VueFire);
-Vue.use(VueFroala);
+Vue.use(VueMoment, {
+ moment
+});
 
 new Vue({
  router,
