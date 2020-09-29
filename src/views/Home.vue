@@ -20,7 +20,7 @@
                 <div>
                   <div class="font-weight-normal">
                     <strong>{{ message.from }}</strong>
-                    <small><v-icon>mdi-clock</v-icon>{{ message.time }}</small>
+                    <small><v-icon>mdi-clock</v-icon> {{ message.time }}</small>
                   </div>
                   <div>{{ message.message }}</div>
                 </div>
@@ -39,24 +39,25 @@ export default {
   data() {
     return {
       homebase: [],
+      time1: new Date().getTime() - 60 * 3 * 1000,
       messages: [
         {
           from: "Óðinn",
           message:
             "Þreif gufuna niðri. þarf að setja dýnurnar aftur á seinni vaktinni!",
-          time: "10:42am",
+          time: "10:42",
           color: "yellow lighten-2",
         },
         {
           from: "Halla",
           message: "Þarf ekki að skoða þetta eithvað?",
-          time: "10:37am",
+          time: "10:37",
           color: "red",
         },
         {
           from: "Steina",
           message: "Ég vil minna á að þrífa Skápana!",
-          time: "9:47am",
+          time: "9:47",
           color: "yellow darken-2",
         },
       ],
