@@ -38,20 +38,24 @@
         </ul>
 
         <div class="uk-navbar-item">
-          <div>Some <a href="#">Link</a></div>
+          <form class="uk-search uk-search-default">
+            <span class="uk-search-icon-flip-left" uk-search-icon></span>
+            <input
+              class="light-blue darken-4 uk-search-input"
+              type="search"
+              placeholder="Search Lifebook"
+            />
+          </form>
         </div>
 
         <div class="uk-navbar-item">
-          <div class="uk-margin">
-            <form class="uk-search uk-search-default">
-              <span class="uk-search-icon-flip-left" uk-search-icon></span>
-              <input
-                class="uk-search-input"
-                type="search"
-                placeholder="Search Lifebook"
-              />
-            </form>
-          </div>
+          <v-avatar size="38" class="mr-2">
+            Óðinn
+            <img
+              src="https://scontent.frkv2-1.fna.fbcdn.net/v/t1.0-9/119065676_3375005745871647_1732712096651772016_o.jpg?_nc_cat=107&_nc_sid=09cbfe&_nc_ohc=HwnB0Jqt3h4AX8nC1f_&_nc_ht=scontent.frkv2-1.fna&oh=0d7969acda5e043284d856a29d9349b7&oe=5FA84FAF"
+              alt="John"
+            />
+          </v-avatar>
         </div>
 
         <div class="uk-navbar-right">
@@ -85,5 +89,36 @@ export default {
 
 <style scoped lang="stylus">
 .uk-navbar {
+  .uk-navbar-left {
+    .uk-navbar-item {
+      form.uk-search {
+        span.uk-icon {
+          color: white;
+        }
+
+        .uk-search-input {
+          border-color: grey;
+          border-radius: 40px;
+        }
+      }
+    }
+
+    a.uk-logo {
+    }
+
+    ul {
+      li {
+        a {
+        }
+      }
+    }
+  }
+
+  .uk-navbar-right {
+    button.v-btn {
+      .v-button__content {
+      }
+    }
+  }
 }
 </style>
