@@ -49,8 +49,10 @@
         </div>
 
         <div class="uk-navbar-item">
-          <v-avatar size="38" class="mr-2">
-            Óðinn
+          <v-avatar size="38" class="mr-3">
+            <span class="mr-2" style="color: white; font-weight: bold"
+              >Óðinn</span
+            >
             <img
               src="https://scontent.frkv2-1.fna.fbcdn.net/v/t1.0-9/119065676_3375005745871647_1732712096651772016_o.jpg?_nc_cat=107&_nc_sid=09cbfe&_nc_ohc=HwnB0Jqt3h4AX8nC1f_&_nc_ht=scontent.frkv2-1.fna&oh=0d7969acda5e043284d856a29d9349b7&oe=5FA84FAF"
               alt="John"
