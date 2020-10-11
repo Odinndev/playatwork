@@ -6,12 +6,33 @@
 
         <ul class="uk-navbar-nav">
           <li>
-            <a href="#">
+            <a href="#" style="color: white">
+              <span><v-icon size="15">mdi-home</v-icon> Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" style="color: white">
               <span
-                class="uk-icon uk-margin-small-right"
-                uk-icon="icon: star"
-              ></span>
-              Features
+                ><v-icon size="15">mdi-book-open-page-variant</v-icon>
+                Pages</span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="#" style="color: white">
+              <span
+                ><v-icon size="15">mdi-account-multiple</v-icon> Groups</span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="#" style="color: white">
+              <span><v-icon size="15">mdi-monitor-multiple</v-icon> Watch</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" style="color: white">
+              <span><v-icon size="15">mdi-gamepad-round-up</v-icon> Games</span>
             </a>
           </li>
         </ul>
@@ -21,28 +42,30 @@
         </div>
 
         <div class="uk-navbar-item">
-          <form action="javascript:void(0)">
-            <input
-              class="uk-input uk-form-width-small"
-              type="text"
-              placeholder="Input"
-            />
-            <button class="uk-button uk-button-default">Button</button>
-          </form>
+          <div class="uk-margin">
+            <form class="uk-search uk-search-default">
+              <span class="uk-search-icon-flip-left" uk-search-icon></span>
+              <input
+                class="uk-search-input"
+                type="search"
+                placeholder="Search Lifebook"
+              />
+            </form>
+          </div>
         </div>
 
         <div class="uk-navbar-right">
           <v-btn v-show="!hidden" color="light-blue darken-4" fab dark small>
-            <v-icon>mdi-plus</v-icon>
+            <v-icon size="20">mdi-plus</v-icon>
           </v-btn>
           <v-btn v-show="!hidden" color="light-blue darken-4" fab dark small>
-            <v-icon>mdi-facebook-messenger</v-icon>
+            <v-icon size="20">mdi-facebook-messenger</v-icon>
           </v-btn>
           <v-btn v-show="!hidden" color="light-blue darken-4" fab dark small>
-            <v-icon>mdi-bell</v-icon>
+            <v-icon size="20">mdi-bell</v-icon>
           </v-btn>
           <v-btn v-show="!hidden" color="light-blue darken-4" fab dark small>
-            <v-icon>mdi-account-circle</v-icon>
+            <v-icon size="20">mdi-account-circle</v-icon>
           </v-btn>
         </div>
       </div>
